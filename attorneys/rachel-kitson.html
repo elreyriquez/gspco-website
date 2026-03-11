@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rachel E. Kitson | Grant Stewart Phillips & Co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-contact">
+      <a href="tel:876-926-1880"><span class="contact-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></span>+1 (876) 926-1880</a>
+      <a href="mailto:info@gspco.net"><span class="contact-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>info@gspco.net</a>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo"><img src="../Images/Logo/header-logo.png" alt="Grant Stewart Phillips & Co"></a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="../practice-areas.html">Practice Areas</a></li>
+        <li><a href="../attorneys.html" class="active">Attorneys</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <div class="profile-layout">
+        <img src="../Images/attorneys/RACHEL%20E.%20KITSON.jpg" alt="Rachel E. Kitson" class="profile-photo">
+        <div class="profile-content">
+          <h2>Rachel E. Kitson</h2>
+          <p class="profile-title">Associate</p>
+          <div class="profile-bio">
+            <p>Rachel Kitson was called to the Jamaican Bar in December 2019 and is an associate in the firm's Litigation, Real Property and Conveyancing departments. Her practice areas include: Civil and Commercial Litigation, Probate and Administration of Estates, Real Estate, and Conveyancing.</p>
+            <p>Prior to joining the firm, Rachel obtained her Bachelor of Laws Degree with honours from the University of the West Indies, Mona in 2017 and thereafter received a Certificate of Legal Education from the Norman Manley Law School.</p>
+            <p>She is a member of the Jamaica Bar Association and enjoys travelling in her spare time.</p>
+            <p class="profile-email"><a href="mailto:rachel.kitson@gspco.net" class="btn">Contact Me by Email</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-columns">
+      <div class="footer-column footer-logo-col">
+        <a href="../index.html"><img src="../Images/Logo/footer-logo.png" alt="Grant Stewart Phillips & Co" class="footer-logo"></a>
+      </div>
+      <div class="footer-column footer-contact-col">
+        <h4>Get in touch</h4>
+        <p>Email: <a href="mailto:info@gspco.net">info@gspco.net</a></p>
+        <p>Telephone: <a href="tel:+18769261880">(876) 926-1880</a></p>
+        <p>Office Hours: Monday – Friday, 8:30am – 4:30pm</p>
+        <p>Address:<br>11a Swallowfield Road, Kingston 5<br>St Andrew, Jamaica</p>
+      </div>
+    </div>
+    <p class="footer-copyright">© 2024, Grant Stewart Phillips & Co</p>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle')?.addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Grant Stewart Phillips & Co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-contact">
+      <a href="tel:876-926-1880"><span class="contact-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></span>+1 (876) 926-1880</a>
+      <a href="mailto:info@gspco.net"><span class="contact-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>info@gspco.net</a>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><img src="Images/Logo/header-logo.png" alt="Grant Stewart Phillips & Co"></a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="practice-areas.html">Practice Areas</a></li>
+        <li><a href="attorneys.html">Attorneys</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Contact Info</h2>
+          <p><em>Get in touch</em></p>
+          <p><strong>Email:</strong> <a href="mailto:info@gspco.net">info@gspco.net</a></p>
+          <p><strong>Telephone:</strong> <a href="tel:876-926-1880">(876) 926-1880</a></p>
+          <p><strong>Fax:</strong> (876) 926-5012</p>
+          <p><strong>Office Hours:</strong> Monday – Friday, 8:30am – 4:30pm</p>
+          <p><strong>Address:</strong><br>11a Swallowfield Road, Kingston 5<br>St Andrew, Jamaica</p>
+        </div>
+
+        <div>
+          <h2>Send Us a Message</h2>
+          <p style="margin-bottom: 1rem;"><em>Let us help you</em></p>
+          <form class="contact-form" action="mailto:info@gspco.net" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.querySelector('.nav-toggle')?.addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
