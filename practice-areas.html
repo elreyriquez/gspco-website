@@ -20,7 +20,13 @@
   <nav class="main-nav">
     <div class="nav-inner">
       <a href="index.html" class="logo"><img src="Images/Logo/header-logo.png" alt="Grant Stewart Phillips & Co"></a>
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-icon">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
       <ul class="nav-links">
         <li><a href="practice-areas.html" class="active">Practice Areas</a></li>
         <li><a href="attorneys.html">Attorneys</a></li>
@@ -284,7 +290,11 @@
 
   <script>
     document.querySelector('.nav-toggle')?.addEventListener('click', () => {
-      document.querySelector('.nav-links').classList.toggle('active');
+      const toggle = document.querySelector('.nav-toggle');
+      const links = document.querySelector('.nav-links');
+      toggle?.classList.toggle('active');
+      links?.classList.toggle('active');
+      toggle?.setAttribute('aria-expanded', links?.classList.contains('active') ? 'true' : 'false');
     });
 
     function applyFilter(filter) {
