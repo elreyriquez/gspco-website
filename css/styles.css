@@ -19,9 +19,11 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'Libre Baskerville', Georgia, serif;
   color: var(--navy);
   line-height: 1.7;
@@ -233,7 +235,7 @@ a:hover {
 
 @media (max-width: 768px) {
   .hero {
-    height: 250px;
+    display: none;
   }
 }
 
@@ -906,6 +908,11 @@ section {
 @media (max-width: 768px) {
   .nav-inner {
     position: relative;
+  }
+
+  .logo img {
+    height: 72px;
+    max-width: 270px;
   }
 
   .nav-toggle {
